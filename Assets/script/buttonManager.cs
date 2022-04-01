@@ -9,6 +9,7 @@ public class buttonManager : MonoBehaviour
 
     public static int isGun;
     public static int isSword;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,12 +17,6 @@ public class buttonManager : MonoBehaviour
         sword.SetActive(false);
         isGun = 1;
         isSword = 0;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
     public void ShowGun()

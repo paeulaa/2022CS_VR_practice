@@ -10,8 +10,8 @@ public class ShootingGun : MonoBehaviour
     public GameObject Fire;
     public GameObject bullet;
     public Transform point;
-    //private XRGrabInteractable grabInteractable;
 
+    //private XRGrabInteractable grabInteractable;
     private float speed = 80f;
 
     [Space]
@@ -28,11 +28,6 @@ public class ShootingGun : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
     private void GoToMouseL(InputAction.CallbackContext obj)
     {
         Mouse_L.action.performed += Doingsth;

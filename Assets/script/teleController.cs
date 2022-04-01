@@ -12,6 +12,7 @@ public class teleController : MonoBehaviour
 
     public UnityEvent onTeleportActivate;
     public UnityEvent onTeleportCancel;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,11 +20,6 @@ public class teleController : MonoBehaviour
         teleportActivaitonReference.action.canceled += TeleportModeCancel;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
     private void TeleportModeActivate(InputAction.CallbackContext obj)
     {
         Debug.Log("Press success");

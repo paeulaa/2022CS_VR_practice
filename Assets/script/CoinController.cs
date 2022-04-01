@@ -16,8 +16,6 @@ public class CoinController : MonoBehaviour
     {
         coin.transform.position = new Vector3(1.4f, 0.5f, -0.8f);
         coin.SetActive(false);
-        //scaleChange = new Vector3(1f, 1f, 1f);
-        //positionChange = new Vector3(0f, 0.7f, 0f);
     }
 
     // Update is called once per frame
@@ -25,10 +23,6 @@ public class CoinController : MonoBehaviour
     {
         if (coin.transform.position.y < 1.5f || coin.transform.localScale.y < 1f)
         {
-            // coin.transform.localScale.x += Time.deltaTime;
-            // coin.transform.localScale.y += Time.deltaTime;
-            // coin.transform.localScale.z += Time.deltaTime;
-            // coin.transform.position.y += Time.deltaTime;
             temp = coin.transform.localScale;
 
             temp.x += Time.deltaTime;
@@ -43,7 +37,6 @@ public class CoinController : MonoBehaviour
             temp2.y += Time.deltaTime;
 
             coin.transform.position = temp2;
-
 
         }
 
